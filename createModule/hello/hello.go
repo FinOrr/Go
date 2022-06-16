@@ -22,7 +22,10 @@ func main() {
 	}
 
 	// Request a greeting message
+
+	// To return just a single greeting for Gary:
 	// message, err := greetings.Hello("Gary")
+	// To return a greeting for each of the names passed in:
 	messages, err := greetings.Hellos(names)
 
 	// If an error was returned, print it to the console and exit
