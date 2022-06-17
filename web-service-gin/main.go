@@ -55,6 +55,7 @@ func postAlbums(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, newAlbum)
 }
 
+// getAlbumByID returns album details by searching for the specific ID
 func getAlbumByID(c *gin.Context) {
 	id := c.Param("id")
 
